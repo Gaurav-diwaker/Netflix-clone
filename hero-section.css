@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+     .information h1 {
+        color: white;
+        font-size: 55px;
+        line-height: 1.4;
+        /* font-weight: 800; */
+    }
+
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .information h4 {
+        color: white;
+        font-size: 19px;
+        margin-top: 17px;
+    }
+
+    .information p {
+        color: white;
+        font-size: 15px;
+        margin-top: 35px;
+    }
+
+    .hero-container {
+      text-align: center;
+    width: 576px;
+    margin-top: 180px;
+    }
+    .action{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 15px;
+    }
+    .member-info{
+        color: #b8b1b1;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .email input{
+        background-color:rgba(32, 29, 29, 0.725);
+    padding: 18px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 100%;
+}
+.email input::placeholder{
+        font-size: 16px;
+        color: rgb(205, 194, 194);
+    }
+    .email{
+        width: 64%;
+    }
+    .free-trial{
+        width: 58%;
+    }
+    .free-trial button{
+            width: 100%;
+            border: none;
+            font-size: 23px;
+            color: white;
+        padding: 14px;
+        border-radius: 4px;
+        background-color: #e50914;
+        font-weight: 600;
+    }
+     .curve-in {
+        height: 10vh;
+        width: 100%;
+        background: linear-gradient(to right, black, pink, red, pink, black);
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .curve-out {
+        height: 90%;
+        width: 100%;
+        background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+        position: absolute;
+        top: 11%;
+        border-top-left-radius: 45%;
+        border-top-right-radius: 45%;
+    }
+    @media (max-width:1280px) {
+        .information h1{
+            font-size: 41px;
+        }
+        .information h4{
+            font-size: 15px;
+            margin-top: 5px;
+        }
+        .information p{
+            margin-top: 27px;
+            font-size: 16px;
+        }
+        .free-trial button{
+            font-size: 19px;
+        }
+        .hero-container{
+            margin-top: 160px;
+        }
+        .member-info{
+            margin-bottom: 30px;
+        }
+    }
+    @media (max-width:959px) {
+        .information h1{
+            font-size: 31px;
+            margin: 0 auto;
+            width: 442px;
+        }
+         .hero-container{
+            margin-top: 140px;
+        }
+        .information p{
+                width: 425px;
+    margin: 27px auto;
+        }
+        .email{
+            width: 36%;
+        }
+        .free-trial{
+            width: 39%;
+        }
+        .member-info{
+            margin-bottom: 120px;
+        }
+    }
+    @media (max-width:600px) {
+        .action{
+            flex-direction: column;
+        }
+        .email{
+            width: 91%;
+        }
+        .information p{
+            width: 426px;
+        }
+         .member-info{
+            margin-bottom: 120px;
+        }
+    }
+    @media (max-width:505px) {
+         .free-trial button{
+            font-size: 17px;
+            padding: 11px;
+        }
+        .free-trial{
+            width: 47%;
+        }
+         .hero-container{
+            margin-top: 90px;
+        }
+       .member-info{
+            margin-bottom: 100px;
+        }
+    }
+    @media (max-width:443px) {
+        .information h1{
+            width: 89%;
+            font-size: 30px;
+        }
+        .information p{
+            width: 100%;
+        }
+        .information{
+            width: 100%;
+        }
+        .email{
+            width: 90%;
+            padding: 12px;
+        }
+        .free-trial button{
+            font-size: 17px;
+            padding: 11px;
+        }
+        .free-trial{
+            width: 47%;
+        }
+         .hero-container{
+            margin-top: 75px;
+        }
+        .member-info{
+            margin-bottom: 100px;
+        }
+    }
+    @media (max-width:368px) {
+         .free-trial{
+            width: 58%;
+        }
+         .hero-container{
+            margin-top: 50px;
+        }
+        .member-info{
+            margin-bottom: 100px;
+        }
+    }
+    @media (max-width:334px) {
+        .information h1{
+            width: 79%;
+        }
+    }

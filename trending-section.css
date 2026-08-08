@@ -1,0 +1,184 @@
+.trending-section{
+    background: black;
+}
+.trending-container{
+    padding-top: 22px; ;
+}
+.slides{
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+}
+.slider{
+    margin: 0 auto;
+    position: relative;
+    width: 83%;
+}
+.slides img{
+    width: 180px;
+    border-radius: 12px;
+}
+.num{
+    color: black;
+    position: absolute;
+    bottom: 13px;
+    font-size: 103px;
+    -webkit-text-stroke:2px white;
+    font-weight: 800;
+    left: -9px;
+}
+.card{
+    position: relative;
+    padding: 20px;
+}
+.buttons{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 12px;
+    width: 100%;
+}
+.trend-msg h3{
+    color: white;
+    font-size: 24px;
+    margin-left: 127px;
+}
+
+.reasons-to-join h2{
+    color: white;
+    font-size: 23px;
+    margin-left: 135px;
+}
+.reasons-to-join p{
+    color: #bbbac1;
+    margin-top: 15px;
+}
+.reasons{
+    display: flex;
+    margin: 0 auto;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.reasons-to-join{
+    margin-top: 51px;
+    padding-bottom: 50px;
+}
+.reasons-to-join h3{
+    color: white;
+}
+.reasons h3{
+        font-size: 24px;
+}
+.reasons .reason:nth-child(1) p{
+    width: 90%;
+}
+.reason:nth-child(3) p{
+    width: 246px;
+}
+.reason:nth-child(2) p{
+    width: 88%;
+}
+.reason:nth-child(2) h3{
+    width: 94%;
+}
+.reason:nth-child(4) p{
+    width: 94%;
+}
+.reason{
+   background: linear-gradient(to bottom right,#1a2144,#1e172c,#20101c);
+   width: 19.1%;
+   height: 250px;
+   position: relative;
+   border-radius: 15px;
+}
+.reason svg{
+    position: absolute;
+    bottom: 18px;
+    right: 13px;
+}
+.text{
+    margin-left: 16px;
+    margin-top: 25px;
+}
+.card:hover{
+    scale: 1.04;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.card:hover .num{
+    scale: 1.04;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media (max-width:1280px) {
+    .slides img{
+        width: 141px;
+    }
+    .slider{
+        width: 91%;
+    }
+    .trend-msg h3{
+        margin-left: 53px;
+    }
+    .num{
+        font-size: 80px;
+    }
+    .reason{
+        flex: 0 0 calc((100% - 20px) / 2);
+        height: 190px;
+    }
+    .reasons{
+        flex-wrap: wrap;
+        gap: 12px;
+        padding:0px 34px 0px 34px;
+    }
+    .text h3{
+        font-size: 19px;
+    }
+    .reasons-to-join h2{
+        margin-left: 88px;
+    }
+}
+@media (max-width:960px) {
+    .card{
+        padding: 1px;
+    }
+    .trend-msg h3{
+        font-size: 18px;
+        margin-bottom: 13px;
+    }
+    .card img{
+        width: 114px;
+    }
+    .num{
+        font-size: 62px;
+        bottom: 3px;
+    }
+    .trend-msg h3{
+        margin-left: 35px;
+    }
+    .reasons{
+        flex-direction: column;
+    }
+    .reason{
+        width: 100%;
+        padding: 0px 0px 82px 0px ;
+    }
+    .reason:nth-child(3) p{
+    width: 100%;
+}
+.reasons-to-join h2{
+    font-size: 17px;
+    margin-left: 34px;
+}
+}
+
+@media (max-width:600px) {
+    .reason svg{
+        width: 60px;
+        bottom: 13px;
+    }
+}

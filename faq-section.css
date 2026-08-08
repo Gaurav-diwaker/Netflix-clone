@@ -1,0 +1,155 @@
+.question{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    align-items: center;
+}
+.question .plus img{
+    width: 30px;
+    color: #a9a9a9;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.faq-section{
+    background-color: black;
+}
+.heading h3{
+    color: white;
+    font-size: 24px;
+    margin-left: 150px;
+    margin-bottom: 15px;
+}
+.question{
+    color: white;
+    width: 80%;
+}
+.q{
+    font-size: 24px;
+    margin-left: 24px;
+    padding: 29px 0px;
+}
+.plus{
+    margin-right: 19px;
+}
+.faq-container{
+    padding-top: 13px;
+}
+
+.membership{
+    margin-top: 71px;
+}
+.faq-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.ready-text p{
+    text-align: center;
+    margin-bottom: 17px;
+}
+.faq-email{
+    width: 497px;
+}
+.faq-email input{
+    background-color: rgba(32, 29, 29, 0.725);
+    padding: 18px;
+    border: 1px solid gray;
+    width: 100%;
+    border-radius: 4px;
+}
+.free-button button{
+      width: 100%;
+            border: none;
+            font-size: 23px;
+            color: white;
+        padding: 14px;
+        border-radius: 4px;
+        background-color: #e50914;
+        font-weight: 600;
+}
+.free-button{
+    width: 262px;
+}
+.faq-email input::placeholder{
+    font-size: 16px;
+        color: rgb(205, 194, 194);
+}
+.detail{
+    color: #ffffffB3;
+    width: 95%;
+    margin-top: 22px;
+}
+.ph-no{
+    
+    margin-top: 60px;
+    color: #ffffffB3;
+    
+}
+.box{
+    margin-left: 7%;
+
+}
+.ph-no span{
+    text-decoration: underline;
+    text-decoration-color: #ffffffB3;
+}
+.question:hover{
+    cursor: pointer;
+    background-color: #414141;
+    transition: 0.4s;
+}
+@media (max-width:1280px) {
+    .question{
+        width: 88%;
+    }
+    .heading h3{
+        margin-left: 77px;
+    }
+    .free-button button{
+            font-size: 18px;
+            padding: 16px;
+    }
+}
+@media (max-width:960px) {
+    .q{
+        padding: 23px 0px;
+        font-size: 18px;
+    }
+    .question{
+        width: 93%;
+    }
+    .question .plus img{
+        width: 21px;
+    }
+    .heading h3{
+        font-size: 18px;
+        margin-left: 34px;
+    }
+}
+@media (max-width:800px) {
+    .faq-action{
+        padding-left: 12px;
+    padding-right: 12px;
+    }
+}
+@media (max-width:600px) {
+    .faq-action{
+        flex-direction: column;
+        /* padding-left: 27px;
+        padding-right: 24px; */
+    }
+    .faq-email input{
+        padding: 14px;
+    }
+    .faq-email{
+        width: 100%;
+    }
+    .free-button button{
+        padding: 14px;
+    }
+}

@@ -1,0 +1,94 @@
+  @font-face {
+    font-family: "MyFont";
+    src: url("./fonts/Netflix-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+    .offer{
+        background: linear-gradient(to right, #4040e2, #ef2828);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 14px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+    left: 0;
+    }
+    .offer:hover{
+        cursor: pointer;
+    }
+    .offer p{
+        color: white;
+        font-weight: 600;
+    }
+    body{
+      font-family: "MyFont",sans-serif;
+    }
+    .main{
+        display: flex;
+        height: 850px;
+        position: relative;
+        flex-direction: column;
+    }
+    .bg-img{
+        background:linear-gradient(rgba(0, 0, 0, 0.7),
+                        rgba(0, 0, 0, 0.7)),
+        url("images/background-imgae.jpg");;
+        /* height: calc(100vh - 52px); */
+        background-size: cover;
+    background-repeat: no-repeat;
+        flex: 1;
+        margin-top: 52px;
+    }
+    .logo img{
+        width: 147px;
+    }
+     .header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 22px auto 0;
+}
+    .header-right{
+        display: flex;
+        gap: 10px;
+    }
+    .header-right .language select{
+        text-align: center;
+        padding: 6px 0px;
+        width: 122px;
+        color: white;
+        background-color: rgba(12, 12, 12, 0.7);
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    .sign-in button{
+        text-align: center;
+        background-color: #e50914;
+        border: none;
+        color: white;
+        padding: 8px;
+        font-weight: 700;
+            width: 74px;
+    border-radius: 4px;
+    }
+    @media (max-width: 959px)  {
+        .logo img{
+            width: 90px;
+        }
+    }
+    @media (max-width: 599px)  {
+        .header-right .language select{
+        font-size: 13px;
+        width: 63px;
+    }
+    }
+    @media (max-width: 321px)  {
+       .header{
+        justify-content: space-around;
+       }
+    }
